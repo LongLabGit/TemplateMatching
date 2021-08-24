@@ -49,8 +49,8 @@ popBinary = zeros(length(clusters),length(burstBinary));
 
 for k = 1:length(clusters)
     burstBinary = zeros(round(totalTime*1e3),1);
-    burstOn = round(clusters(k).burstOn*1e3 + 1);
-    burstOff = round(clusters(k).burstOff*1e3 + 1);
+    burstOn = round(clusters(k).burstOn*1e3);
+    burstOff = round(clusters(k).burstOff*1e3);
    
     n = 1;
     while n <= length(burstOn)
